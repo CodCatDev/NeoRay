@@ -1,6 +1,6 @@
 <p align="center">
     <img src="logo.png" width="15%"><br>
-  <strong style="font-size: 4.2em;">[ <b>NeoRay</b> ]</strong><br>
+  <strong style="font-size: 4.2rem;">[ <b>NeoRay</b> ]</strong><br>
   <sub style="font-size: 1.5em;">[ <b>v0.2</b> ] [ <b>BuildBy 2026.03.20</b> ]</sub>
 </p>
 
