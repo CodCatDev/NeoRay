@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NeoRay - 404</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>4<span>0</span>4</h1>
+    <h2>Nothing found</h2>
+    <p>NeoRay Server | v0.2.04</p>
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px), 
+    linear-gradient(135deg, #14151A, #2B2433, #14151A);
+  background-size: 24px 24px, 100% 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  color: #ffffff;
+}
+h1 {
+  font-size: 150px;
+  margin: 0px;
+  user-select: none;
+  span {
+    color: #bbbbbb;
+    transition: all 0.3s ease;
+  }
+  :hover {
+    color: #e37a7a;
+    transform: translateY(20px);
+  }
+}
+h2 {
+  font-size: 30px;
+  margin: 0;
+}
+p {
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+}
+</style>
+</html>
