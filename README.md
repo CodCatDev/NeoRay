@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="logo.png" width="15%"><br>
-  <h1>[ <b>NeoRay</b> ]</h1> <h3>[ <b>v0.2.04</b> ] [ <b>BuildBy 2026.03.22</b> ]</h3>
+  <img src="logo.png" width="150px"><br>
+  <h1>[ <b>NeoRay</b> ]</h1> <h3>[ <b>v0.2.04.2</b> ] [ <b>BuildBy 2026.03.23</b> ]</h3>
 </div>
 
 ---
@@ -19,9 +19,16 @@
 
 | Task                  | Status |
 |-----------------------|--------|
-| Add base page support | [+]    |
+| Add page support      | [ ]    |
 | Add config support    | [ ]    |
-| Add path support      | [+]    |
+| Add path support      | [ ]    |
+| Add Async support     | [ ]    |
+| Add MultiProcessing   | [ ]    |
 | Add HTTPS/SSL Support | [ ]    |
 
-<h1>[ <b>Changelog v0.2.04</b> ]</h1>
+<h1>[ <b>Changelog v0.2.04.2</b> ]</h1>
+THIS VERSION - JUST A CODE SAVE IN REPOSITORY, IT WILL BE DEVELOPED AND SOON WILL BE RELEASED THE WORKING VERSION 0.2.05
+
+- Fully rewritten from scratch
+- Logger
+- Basic support for checking integrity (+ Setup)

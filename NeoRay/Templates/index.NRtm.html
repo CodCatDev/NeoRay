@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>NeoRay - 404</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NeoRay - Index</title>
 </head>
 <body>
-    <h1>4<span>0</span>4</h1>
-    <h2>Nothing found</h2>
-    <p>NeoRay Server | v0.2.04</p>
+    <h1>Welcome to NeoRay!</h1>
+    <h2>You can modify this page in <code><span class="www">WWW</span>/<span class="index">index</span>.<span class="html">html</span></code></h2>
+    <p>NeoRay Server | v{version} ({versionType}) - BuildBy {buildDate}</p>
 </body>
 <style>
 * {
@@ -32,26 +32,34 @@ body {
   color: #ffffff;
 }
 h1 {
-  font-size: 150px;
+  font-size: 70px;
   margin: 0px;
   user-select: none;
-  span {
-    color: #bbbbbb;
-    transition: all 0.3s ease;
-  }
-  :hover {
-    color: #e37a7a;
-    transform: translateY(20px);
-  }
+  text-align: center;
 }
 h2 {
   font-size: 30px;
   margin: 0;
+  text-align: center;
+  color: #cbcbcb;
+  code {
+    color: #bdbbaf;
+    .www {
+      color: #3d82b7;
+    }
+    .index {
+      color: #3db764;
+    }
+    .html {
+      color: #f27f58;
+    }
+  }
 }
 p {
   font-size: 20px;
   margin: 0;
   position: absolute;
+  text-align: center;
   bottom: 20px;
 }
 </style>

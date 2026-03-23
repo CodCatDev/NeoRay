@@ -5,47 +5,28 @@
 #                           |__/ 
 #
 #   NeoRay Web Server by CodCatDev
+#
+#   NeoRay.Web (__init__)
 
-import os
-from socket import socket, AF_INET, SOCK_STREAM
+import NeoRay.Config
+import NeoRay.Logger
+from . import Setup
 
-class RunServer():
-    def __init__(self, host, port):
-        self.host = host
-        self.port = port
+logger = NeoRay.Logger.MainLogger()
 
-        # run
-        _Server(self).start()
+logger.log("Initializing NeoRay...")
+print()
+logger.log("Version: v" + NeoRay.Config.__VERSION__)
+logger.log("Type: " + NeoRay.Config.__VERSION_TYPE__)
+logger.log("Build Date: " + NeoRay.Config.__BUILD_DATE__)
+print()
+logger.log("Contributors: ")
 
-class _Server:
-    def __init__(self, self2: RunServer):
-        self.host = self2.host
-        self.port = self2.port
+for contributor in NeoRay.Config.__CONTRIBUTORS__:
+    logger.log(f"    {contributor[0]} -  {contributor[1]}")
+print()
 
-    def check(self):
-        if not os.path.exists('www'):
-            os.mkdir('www')
-        if not os.path.exists('www/index.html'):
-            with open('www/index.html', 'w') as f:
-                f.write("<html><body><h1>Hello, World!222</h1></body></html>")
+Setup.Setup()
 
-    def start(self):
-        self.check()
-        sock = socket(AF_INET, SOCK_STREAM)
-        sock.bind((self.host, self.port))
-        sock.listen(5)
-        conn, addr = sock.accept()
-        while True:
-            data = conn.recv(1024)
-            if not data:
-                break
-            resp = 
-            # resp = (
-            #    "HTTP/1.1 200 OK\r\n"
-            #    "Content-Type: text/html; charset=utf-8\r\n"
-            #    f"Content-Length: {len(response_body)}\r\n"
-            #    "Connection: close\r\n"
-            #    "\r\n"
-            #    f"{response_body}"
-            #)
-            conn.sendall(resp.encode('utf-8'))
+def RunServer(host: str, port: int) -> None:
+    pass

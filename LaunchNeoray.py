@@ -5,9 +5,9 @@
 #                           |__/ 
 #
 #   NeoRay Web Server by CodCatDev
+#
+#   LaunchServer
 
 import NeoRay.Web
-import NeoRay.Web.BaseSetup
 
-NeoRay.Web.BaseSetup.CheckSetup()
-NeoRay.Web.RunServer('0.0.0.0', 80)
+NeoRay.Web.RunServer("0.0.0.0", 80)
